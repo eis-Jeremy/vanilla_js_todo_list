@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/3615d0cfc5.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="" id="theme-style" type="text/css">
+    <script src="./src/js/toggleTheme.js" defer></script>
+    <script src="./src/js/main.js" defer></script>
+    <title>To-Do App</title>
+</head>
+<body>
+    <header>
+        <h1>To-Do</h1>
+        <button class="dark-theme" id="dark-theme-button">
+            <img src="./images/icon-moon.svg" alt="Change Theme Color">
+        </button>
+        
+        <button class="light-theme" id="light-theme-button">
+            <img src="./images/icon-sun.svg" alt="Change Theme Color">
+        </button>
+    </header>
+
+    <main>
+        <section class="card add">
+            <div>
+                <button id="add-btn">
+                    <i class="fas fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="text-container">
+                <input type="text" placeholder="create a new todo." spellcheck="false" autocomplete="off">
+            </div>
+        </section>
+        <section>
+            <ul class="todos">
+                <!-- <li class="card todo-item">
+                    <div class="todo">
+                        <input type="checkbox" id="checkbox-8273">
+                        <label for="checkbox-8273"></label>
+                        <p>Hallo</p>
+                    </div>
+                    <div class="icons">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        <section class="card stats">
+            <p><span id="items-left">0</span> items-left!</p>
+            <div class="filter">
+                <button id="all" class="active">All</button>
+                <button id="active">Active</button>
+                <button id="completed">Completed</button>
+            </div>
+            <div class="corner">
+                <button id="clear">Clear Completed</button>
+            </div>
+        </section>
+        <section class="card m-filter">
+            <button id="m-all" class="active">All</button>
+            <button id="m-active" class=""></button>
+            <button id="m-completed">Completed</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Drag and Drop to reorder list</p>
+    </footer>
+</body>
+</html>
